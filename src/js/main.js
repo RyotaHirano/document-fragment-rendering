@@ -62,6 +62,22 @@ class Table {
     this.tbody.appendChild(fragment)
   }
 
+  slowCreate(data) {
+    data.forEach(item => {
+      const tr = document.createElement('tr')
+      const id = document.createElement('td').textContent(item.id)
+      const name = document.createElement('td').textContent(item.name)
+      const el = document.createElement('td').textContent(item.el)
+      const price = document.createElement('td').textContent(item.price)
+
+      tr.appendChild(id)
+      tr.appendChild(name)
+      tr.appendChild(el)
+      tr.appendChild(price)
+      this.tbody.appendChild(tr)
+    })
+  }
+
   shuffle(array) {
     const _array = [...array]
     const length = _array.length
