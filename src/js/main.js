@@ -116,7 +116,7 @@ class Table {
   shuffleRow() {
     const randomData = this.shuffle(this.data)
     this.tbody.innerHTML = ''
-    this.create(randomData)
+    this.options.mode === 1 ? this.slowCreate(randomData) : this.create(randomData)
   }
 
   escapeHtml(str) {
