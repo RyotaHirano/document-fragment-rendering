@@ -8,10 +8,32 @@ html(lang="ja")
   body
     h1 document fragment rendering
 
-    table.table
-      thead
-        tr
-          th id
-          th name
-          th price
-      tbody
+    .times
+      .time
+        p create table-a time
+        span.js-table-a-time
+        span (ms)
+
+      .time
+        p create table-b time
+        span.js-table-b-time
+        span (ms)
+
+    .tables
+      table.js-table-a
+        thead
+          tr
+            th id
+            th name
+            th image
+            th price
+        tbody
+
+      table.js-table-b
+        thead
+          tr
+            th id
+            th name
+            th image
+            th price
+        tbody

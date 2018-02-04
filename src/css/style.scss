@@ -1,0 +1,45 @@
+table, tr, th, td {
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+
+  th {
+    height: 30px;
+    padding: 10px;
+  }
+
+  td {
+    height: 50px;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.tables {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.times {
+  margin: 30px auto;
+
+  .time {
+    & + .time {
+      margin-top: 20px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-weight: 600;
+  }
+}
