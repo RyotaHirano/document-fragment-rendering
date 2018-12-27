@@ -10,17 +10,17 @@ html(lang="ja")
 
     .times
       .time
-        p create table-a time
-        span.js-table-a-time
+        p create table time (use fragment)
+        span.js-table-fast-time
         span (ms)
 
       .time
-        p create table-b time
-        span.js-table-b-time
+        p create table time
+        span.js-table-slow-time
         span (ms)
 
     .tables
-      table.js-table-a
+      table.js-table-fast
         thead
           tr
             th id
@@ -29,7 +29,7 @@ html(lang="ja")
             th price
         tbody
 
-      table.js-table-b
+      table.js-table-slow
         thead
           tr
             th id

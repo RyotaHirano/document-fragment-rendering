@@ -4,12 +4,12 @@ import '../images/01.jpg'
 
 document.addEventListener('DOMContentLoaded', () => {
   new Table({
-    target: '.js-table-a',
+    target: '.js-table-fast',
     mode: 0
   })
 
   new Table({
-    target: '.js-table-b',
+    target: '.js-table-slow',
     mode: 1
   })
 })
@@ -71,8 +71,9 @@ class Table {
 
         _tr.appendChild(_td)
         fragmentTr.appendChild(_tr)
-        this.tbody.appendChild(fragmentTr)
       }
+
+      this.tbody.appendChild(fragmentTr)
     })
   }
 
